@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Job Link - Login </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../js/validation.js">  </script>
+    </head>
+    
+    <body>
+        <header>
+            <ul id="computer">
+                <li><img src="../pictures/logo.jpg" alt="Job Link Logo" class="logo" /> </li>
+                <li class="slogan"> Job Link - The Link to Your Dream Job </li>
+                <li class="user"><a href="register.html">Register</a></li>
+                <li class="user"><a href="login.html">Login</a></li>
+                <li class="user"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul id="phone">
+                <li><img src="../pictures/logo.jpg" alt="Job Link Logo" class="logo" /> </li>
+                <li class="user"><a href="register.html">Register</a></li>
+                <li class="user"><a href="login.html">Login</a></li>
+                <li class="user"><a href="contact.html">Contact Us</a></li>
+                <li class="slogan"> Job Link - The Link to Your Dream Job </li>
+            </ul>
+        </header>
+        
+        
+        <section class="form">
+            <form action="loginsuccess.html" onsubmit="return validate_password()" method="POST" enctype="multipart/form-data">
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text"  required name="email"><br>
+                        </div>
+                
+                <div>
+                    <label for="pwd">Password</label>
+                    <input type="password" required id="pwd" name="pwd"><br>
+                </div>
+                
+                <input type="submit" value="Submit" >
+                </form>
+        </section>
+ 
+        <footer> &copy; Copyright 2018 by Whitney Rich. All Rights Reserved. </footer>
+        
+    </body>
+</html>

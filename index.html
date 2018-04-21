@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Job Link - The Link to Your Dream Job </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    
+    <body>
+        <header>
+        <ul id="computer">
+            <li><img src="../pictures/logo.jpg" alt="Job Link Logo" class="logo" /> </li>
+            <li class="slogan"> Job Link - The Link to Your Dream Job </li>
+            <li class="user"><a href="register.html">Register</a></li>
+            <li class="user"><a href="login.html">Login</a></li>
+            <li class="user"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul id="phone">
+            <li><img src="../pictures/logo.jpg" alt="Job Link Logo" class="logo" /> </li>
+            <li class="user"><a href="register.html">Register</a></li>
+            <li class="user"><a href="login.html">Login</a></li>
+            <li class="user"><a href="contact.html">Contact Us</a></li>
+            <li class="slogan"> Job Link - The Link to Your Dream Job </li>
+        </ul>
+        </header>
+        
+        <section class="intro">
+        <p> Job Link is the place where employers and job seekers come together and each finds their perfect match. Small business owner? We can free up your busy schedule by finding the employees you need FAST! Recently rejoined the workforce? We know finding a new job is a daunting task, but we are here to help! Start searching our available jobs today or post an opening at your company. </p>
+        </section>
+        
+        <div class="slider" style="width:700px">
+          <img class="myPictures" src="../pictures/test1.jpg" style="width:100%">
+          <img class="myPictures" src="../pictures/test2.jpg" style="width:100%">
+          <img class="myPictures" src="../pictures/test3.jpg" style="width:100%">
+          <img class="myPictures" src="../pictures/test4.jpg" style="width:100%">
+         </div>
+        
+        <script>
+            var slideNum = 0;
+            slideshow();
+            
+            function slideshow() {
+                var i;
+                var x = document.getElementsByClassName("myPictures");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideNum++;
+                if (slideNum > x.length) {slideNum = 1}
+                x[slideNum-1].style.display = "block";
+                setTimeout(slideshow, 8000);
+            }
+        </script>
+        
+        <footer> &copy; Copyright 2017 by Whitney Rich. All Rights Reserved. </footer>
+
+    </body>
+</html>
